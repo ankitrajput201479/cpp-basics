@@ -9,7 +9,7 @@ int main(){//using arithmatic operators
     cout<<"the division of a and b:"<<a/b<<endl;  // it will give the division
    cout<<"the modulus operator:"<<a%b<<endl;      // it will give the remainder
     cout<<"the increment operator:"<<++a<<endl;   //it will increase the value by 1
-    cout<<"the decrement operator:"<<--b<<endl;   //it will decrease the value by11 1
+    cout<<"the decrement operator:"<<--b<<endl;   //it will decrease the value by 1
               // so +,-,*,/,%,++,-- are  arithmatic operators
               //arithamatic opertors
       int c=3;
