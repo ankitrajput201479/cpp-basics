@@ -1,0 +1,25 @@
+#include <iostream>
+#include<fstream>
+using namespace std;
+
+int main() {
+    string st;
+    ifstream file("newdata.txt");//this is my new rext file
+     file>>st;//it will only print first word to solve this problem we use getline function
+     cout<<"only first word is printed from wholeline "<<endl;
+    cout<<st<<endl;
+    getline(file,st);//this print full line in the present in the file
+    cout<<st<<endl;
+    cout<<"|full line is printed using getline function|"<<endl;
+     getline(file,st);  //this will print the next line present in the function
+    cout<<st<<endl;
+    string st2;
+    ifstream in("data.txt");
+    getline(in,st2);
+    cout<<st2<<endl;
+     getline(in,st2);
+     cout<<st2<<endl;
+     
+
+   return 0;
+}
