@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+class maths {
+    private:
+    int a;
+    int b;
+    public:
+    void printnum(void){
+        cout<<"the answer is  "<<a<<"+"<<b<<"i is "<<endl;
+    }
+    maths(int x ,int y){  
+        a=x;
+        b=y;
+    }
+    maths(int x){    //constructor overloading 
+        a=0;
+        b=0;
+    }
+};
+//object meeting the condition which of the constructor that constructor will be called
+int main() {
+    maths sub(4,6);
+    sub.printnum();  
+    maths su(4);           
+    su.printnum();
+    
+   return 0;
+}
