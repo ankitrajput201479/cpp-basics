@@ -1,0 +1,49 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+class interest{
+  private:
+  int principleamount;
+  float rateofinterest;
+  int timelend;
+  int totalinterest;
+  public :
+   interest(){}
+   interest(int p,int r,int t);
+   interest(int p,float r,int t);
+   void show();
+};
+interest::interest(int p,float r,int t){
+     principleamount=p;
+     rateofinterest=r;
+     timelend=t;
+     totalinterest=p+((p*r*t)/100.0);
+};
+void interest::show(){
+    cout<<"this will return the total sum of :"<<totalinterest<<endl;
+};
+void input(int &a,float &b,int &c){
+     cout<<"enter the value of amount : ";
+    cin>>a;
+    cout<<"enter the time period : ";
+    cin>>b;
+    cout<<"enter the rate of interest  : ";
+    cin>>c;
+};
+int main() 
+{
+    interest deposit1,deposit2;
+    int p;
+    float R;
+    int y;
+  cout<<"---------first deposit-------"<<endl<<endl;
+     input(p,R,y);
+    deposit1 = interest(p,R,y);
+    deposit1.show();
+    cout<<endl;
+    cout<<"--------second deposit------"<<endl<<endl;
+    input(p,R,y);
+    deposit2=interest(p,R,y);
+    deposit2.show();
+   return 0;
+}
