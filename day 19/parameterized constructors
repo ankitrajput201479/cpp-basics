@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+
+class maths {
+    private:
+    int a;
+    int b;
+    public:
+    void printnum(void){
+        cout<<"the answer is  "<<a<<"+"<<b<<"i is "<<endl;
+    }
+    maths(int x ,int y=9){  //parameterized constructor with default value can also be used
+        a=x;
+        b=y;
+    } //parameterized constructor beause it has parameters instead of void
+};
+int main() {
+    maths com(2);
+    com.printnum();
+    maths d(3,6);// and a  default value can also be overwritten
+    d.printnum();
+
+   return 0;
+}
