@@ -1,0 +1,28 @@
+#include <iostream>
+#include<cmath> // for mathmatical operation this header file is important 
+using namespace std;
+class point{
+    private:
+    float x,y,a,b,c;
+    public:
+  
+    void dist(void){
+     c=sqrt(((x-a)*(x-a))+((y-b)*(y-b)));
+    }
+    point(float e,float f,float g,float h){
+       x=e;
+       y=f;
+       a=g;
+       b=h;
+
+    }
+    void display(){
+        cout<<"the distance between the points are : "<<c;
+    }
+};
+int main() {
+    point t(3,2,5,6);
+    t.dist();
+    t.display();
+   return 0;
+}
