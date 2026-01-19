@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+class number{
+private:
+int a;
+public:
+number(number &obj){ //copy constructor declared 
+    cout<<"copy construcotr is called!! "<<endl;
+    a=obj.a;
+}
+number(int num){
+    a=num;
+}
+void display(){
+    cout<<"the value of the number is : "<<a<<endl;
+
+}
+};
+int main() {
+   number d(2),d1(3);
+   cout<<"the value of d"<<endl;
+   d.display();
+   cout<<"the value of d1"<<endl;
+   d1.display();
+   number c(d1);//this means copying the other object 
+   cout<<"the value of c"<<endl;
+   c.display();
+   number b(d);
+   cout<<"the value of b"<<endl;
+   b.display();
+
+   return 0;
+}//compiler has its own copy constructor if i dont declare my own then compiler uses its own
