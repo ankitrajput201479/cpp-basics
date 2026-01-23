@@ -13,5 +13,4 @@ This repository documents my day-wise learning progress in C++.
 - Enums
 - File Handling
 - Practice Programs & Mini Exercises
-
-📌 This repository follows a day-wise structure to track consistency and learning progress.
+This repository follows a day-wise structure to track consistency and learning progress.
